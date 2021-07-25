@@ -29,7 +29,13 @@
     //태그.addEventListener('이벤트 이름', 리스너 함수이름);
     //콜백 함수 : 특정 작업이 실행되고 난 뒤에 추가로 실행하는 함수
     //버튼을 클릭한 후에 onClickButton이 추가적으로 실행됨 = 콜백함수
+    //변수를 사용하면 읽기 더 쉽고 재사용할 수 있다. 한번만 실행되고 끝난다면 변수없이
 
+    const onInput=(event)=>{
+      console.log("글자 입력", event.target.value); //event.target.value 로 input태그에 입력한 값을 알아냄. 보통 event e로 씀
+    };
+    const $input = document.querySelector('input');
+    $input.addEventListener('input', onInput);
 
     
   </script>
