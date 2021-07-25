@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>끝말잇기 mine</title>
+</head>
+
+<body>
+    <span id ="order">1</span>번째 참가자
+  </div>
+  <div>제시어: <span id="word"></span>
+  </div>
+  <input type="text">
+  <button>입력</button>
+  <button class="tmpButton">버튼2</button>
+  <button class="tmpButton">버튼3</button>
+  <script>
+    const number = Number(prompt('how many?'))
+    const check = confirm('입력하신 숫자가 ' +number +'인가요?')
+
+    console.log(typeof number)
+    const $input = document.querySelector('input');
+    console.log($input);
+    //태그를 저장하는 변수명은 $로 시작하도록 작성
+
+    const $button = document.querySelector('button');
+    console.log($button);
+
+    const $$buttons = document.querySelectorAll('button'); //태그 여러개
+    console.log($$buttons); //출력값은 배열이 아닌 NodeList 객체
+
+    const $order = document.querySelector('#order'); //아이디 지정
+    console.log($order);
+
+    const $tmpButton = document.querySelectorAll('.tmpButton'); //클래스 지정
+    console.log($tmpButton);
+
+    
+  </script>
+</body>
+</html>
